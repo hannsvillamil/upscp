@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>UNIT PRICE SAVINGS CALCULATOR APP</h2>
+  <p>
+    This unit price calculator is the ultimate shopping calculator. Compare two items and get the best deal!
+  </p>
+
+  <br />
+
+  <h1> Option 1: </h1>
+  Volume [in mL]
+  <ion-item>
+  <ion-label>Volume</ion-label>
+  <ion-input type="number" [(ngModel)]="volumemL"></ion-input>
+</ion-item>
+<br>
+Cost 
+  <ion-item>
+  <ion-label>Cost</ion-label>
+  <ion-input type="number" [(ngModel)]="cost1"></ion-input>
+</ion-item>
+<br>
+<h1> Option 2: </h1>
+Volume [in L]
+<ion-item>
+  <ion-label>Volume</ion-label>
+  <ion-input type="number" [(ngModel)]="volumeL"></ion-input>
+</ion-item>
+<br>
+Cost 
+  <ion-item>
+  <ion-label>Cost</ion-label>
+  <ion-input type="number" [(ngModel)]="cost2"></ion-input>
+  </ion-item>
+<button ion-button color="secondary" (click)="calculateUPS ()">CALCULATE</button>
+<ion-item *ngIf="ups">
