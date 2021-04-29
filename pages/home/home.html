@@ -9,34 +9,39 @@
   <p>
     This unit price calculator is the ultimate shopping calculator. Compare two items and get the best deal!
   </p>
-<img src="https://cdn.jsdelivr.net/gh/hannsvillamil/upscp@master/download.jpeg">
 
   <br />
 
   <h1> Option 1: </h1>
-  Volume [in mL]
+  <h3> Volume [in mL] </h3>
   <ion-item>
   <ion-label>Volume</ion-label>
   <ion-input type="number" [(ngModel)]="volumemL"></ion-input>
 </ion-item>
 <br>
-Cost 
+<h3> Cost </h3>
   <ion-item>
   <ion-label>Cost</ion-label>
   <ion-input type="number" [(ngModel)]="cost1"></ion-input>
 </ion-item>
 <br>
 <h1> Option 2: </h1>
-Volume [in L]
+<h3> Volume [in L] </h3>
 <ion-item>
   <ion-label>Volume</ion-label>
   <ion-input type="number" [(ngModel)]="volumeL"></ion-input>
 </ion-item>
 <br>
-Cost 
+<h3> Cost </h3>
   <ion-item>
   <ion-label>Cost</ion-label>
   <ion-input type="number" [(ngModel)]="cost2"></ion-input>
   </ion-item>
+
 <button ion-button color="secondary" (click)="calculateUPS ()">CALCULATE</button>
-<ion-item *ngIf="ups">
+<ion-item *ngIf="UPS">
+  <p>{{UPS}}</p>
+</ion-item>
+<p>Unit Price (A): {{UPA}}</p>
+<p>Unit Price (B): {{UPB}}</p>
+<p>You Save: {{savings}}</p>

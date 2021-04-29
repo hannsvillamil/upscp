@@ -3,35 +3,34 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  styleUrls: ['home.css']
 })
 export class HomePage {
 height: number;
-  volumeL: number;
   volumemL: number;
-  Cost: number; 
+  cost1: number; 
+  volumeL: number;
+  cost2: number; 
+
   UPA: number;
   UPB: number;
-  Savings: number;   
-  SavingsMessage: string;
+  savings: number;   
+  UPS: string;
 
-calculateUPA () {
-  this.UPA = this.Cost / (this.volumemL * 1000);
+calculateUPS () {
+  this.UPA = (this.cost1 / this.volumemL) * 1000;
+  this.UPB = this.cost2 / this.volumeL;
+  this.savings = this.UPA - this.UPB;
+  this.savings = parseFloat(this.savings.toFixed(2));
 
-}
-calculateUPB (){
-  this.UPB = this.Cost / this.volumeL;
-}
-calculateSavings () {
-  this.Savings = this.UPB - this.UPA;
-  this.Savings = parseFloat(this.Savings.toFixed(2));
 
   if (this.UPA > this.UPB) {
-    this.SavingsMessage = "Option B is Cheaper!";
+    this.UPS = "Option B is Cheaper!";
   } else if (this.UPA < this.UPB) {
-    this.SavingsMessage = "Option A is Cheaper!";
+    this.UPS = "Option A is Cheaper!";
   } else {
-    this.SavingsMessage = "Option A and B are the same price!";
+    this.UPS = "Option A and B are the same price!";
   }
 
 }

@@ -1,0 +1,31 @@
+ion-content {
+background: #fff url(https://cdn.jsdelivr.net/gh/hannsvillamil/upscp@master/https___specials-images.forbesimg.com_imageserve_1141999659_0x0.jpg) center center/cover no-repeat ;
+}
+
+h2 {
+  font-family: Coolvetica;
+  text-align: center;
+
+}
+
+p {
+  font-family: Coolvetica;
+  text-align: center;
+
+}
+
+h1 {
+  font-family: Futura;
+  text-align: center;
+}
+
+h3 {
+  font-family: Glacial Indifference;
+  text-align: center;
+  -moz-text-size-adjust: 
+}
+ 
+ ion-content {
+   font-family: Glacial Indifference;
+  
+ }
