@@ -3,29 +3,29 @@ background: #fff url(https://cdn.jsdelivr.net/gh/hannsvillamil/upscp@master/http
 }
 
 h2 {
-  font-family: Coolvetica;
+  font-family: Arial black ;
   text-align: center;
 
 }
 
 p {
-  font-family: Coolvetica;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, bold;
   text-align: center;
 
 }
 
 h1 {
-  font-family: Futura;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
 }
 
 h3 {
-  font-family: Glacial Indifference;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
-  -moz-text-size-adjust: 
+
 }
  
  ion-content {
-   font-family: Glacial Indifference;
+   font-family: Arial black;
   
  }
